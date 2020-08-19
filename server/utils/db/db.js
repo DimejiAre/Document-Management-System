@@ -1,5 +1,7 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('postgres://user:pass@example.com:5432/dbname');
+const sequelize = new Sequelize(process.env.POSTGRES_URL);
+
+sequelize.sync({ force: true });
 
 module.exports = sequelize;
