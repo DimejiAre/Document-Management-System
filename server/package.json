@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --exit",
     "server": "nodemon index.js"
   },
   "author": "Dimeji Lawal-Are",
@@ -19,11 +19,14 @@
     "sequelize": "^6.3.4"
   },
   "devDependencies": {
+    "chai": "*",
+    "chai-http": "^4.3.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "mocha": "*",
     "nodemon": "^2.0.4"
   },
   "husky": {
